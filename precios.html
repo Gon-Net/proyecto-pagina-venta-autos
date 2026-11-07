@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precios | AutoElite</title>
+  <meta name="description" content="Precios de vehículos, planes de financiamiento y paquetes de servicio. Todo claro, sin letras chiquitas." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: { 950: '#09090b', 900: '#131316' } },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Outfit', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-ink-950 font-sans text-zinc-100 antialiased selection:bg-amber-400 selection:text-ink-950">
+
+  <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink-950/80 backdrop-blur-lg">
+    <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-6" aria-label="Principal">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-amber-400 text-ink-950">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+        </span>
+        <span class="font-display text-xl font-bold tracking-tight text-white">Auto<span class="text-amber-400">Elite</span></span>
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm font-medium text-zinc-300 md:flex">
+        <a href="index.html" class="transition hover:text-amber-400">Inicio</a>
+        <a href="index.html#vehiculos" class="transition hover:text-amber-400">Vehículos</a>
+        <a href="servicios.html" class="transition hover:text-amber-400">Servicios</a>
+        <a href="precios.html" class="text-amber-400" aria-current="page">Precios</a>
+        <a href="index.html#contacto" class="transition hover:text-amber-400">Contacto</a>
+      </div>
+
+      <a href="index.html#contacto" class="rounded-full bg-amber-400 px-5 py-2.5 text-sm font-semibold text-ink-950 transition hover:bg-amber-300">Cotizar ahora</a>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+
+    <!-- ENCABEZADO -->
+    <section class="relative overflow-hidden border-b border-white/5 py-20 sm:py-24">
+      <div class="absolute -top-24 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-amber-400/10 blur-3xl"></div>
+      <div class="relative mx-auto max-w-4xl px-6 text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">Precios 2026</p>
+        <h1 class="mt-3 font-display text-4xl font-bold leading-tight text-white sm:text-5xl">
+          Precios claros,<br /><span class="bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent">sin letras chiquitas.</span>
+        </h1>
+        <p class="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-zinc-400 sm:text-base">
+          Consulta el precio de contado, la mensualidad estimada y el costo de cada servicio. Todo lo que necesitas para decidir con confianza.
+        </p>
+
+        <dl class="mx-auto mt-10 grid max-w-2xl grid-cols-3 gap-6">
+          <div class="rounded-2xl border border-white/5 bg-ink-900 px-4 py-4">
+            <dt class="text-[11px] text-zinc-400">Enganche desde</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-white">10%</dd>
+          </div>
+          <div class="rounded-2xl border border-white/5 bg-ink-900 px-4 py-4">
+            <dt class="text-[11px] text-zinc-400">Tasa desde</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-white">11.9%</dd>
+          </div>
+          <div class="rounded-2xl border border-white/5 bg-ink-900 px-4 py-4">
+            <dt class="text-[11px] text-zinc-400">Aprobación</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-white">24 h</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- PRECIOS DE VEHÍCULOS -->
+    <section id="vehiculos" class="scroll-mt-20 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">Inventario y precios</p>
+            <h2 class="mt-2 font-display text-3xl font-bold text-white sm:text-4xl">Vehículos disponibles</h2>
+            <p class="mt-2 max-w-xl text-sm text-zinc-400">Precios de contado en MXN, IVA incluido. Actualizado en noviembre de 2026.</p>
+          </div>
+          <a href="index.html#vehiculos" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 transition hover:text-amber-300">
+            Ver fichas completas
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+          </a>
+        </div>
+
+        <div class="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-ink-900">
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[900px] text-left text-sm">
+              <caption class="sr-only">Precios de vehículos disponibles</caption>
+              <thead class="bg-white/5 text-[11px] uppercase tracking-wider text-zinc-400">
+                <tr>
+                  <th scope="col" class="px-5 py-4 font-semibold">Modelo</th>
+                  <th scope="col" class="px-5 py-4 font-semibold">Año</th>
+                  <th scope="col" class="px-5 py-4 font-semibold">Kilometraje</th>
+                  <th scope="col" class="px-5 py-4 font-semibold">Transmisión</th>
+                  <th scope="col" class="px-5 py-4 text-right font-semibold">Precio contado</th>
+                  <th scope="col" class="px-5 py-4 text-right font-semibold">Mensualidad desde*</th>
+                  <th scope="col" class="px-5 py-4 text-right font-semibold"><span class="sr-only">Acción</span></th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr class="transition hover:bg-white/5">
+                  <td class="px-5 py-4">
+                    <p class="font-medium text-white">BMW X5 xDrive40i</p>
+                    <p class="mt-0.5 text-xs text-zinc-500">SUV · Certificado</p>
+                  </td>
+                  <td class="px-5 py-4 text-zinc-300">2022</td>
+                  <td class="px-5 py-4 text-zinc-300">28,500 km</td>
+                  <td class="px-5 py-4 text-zinc-300">Automática</td>
+                  <td class="px-5 py-4 text-right font-semibold text-white">$1,290,000</td>
+                  <td class="px-5 py-4 text-right font-semibold text-amber-400">$34,723<span class="text-[11px] font-normal text-zinc-500">/mes</span></td>
+                  <td class="px-5 py-4 text-right">
+                    <a href="https://wa.me/5215512345678?text=Hola%2C%20me%20interesa%20el%20BMW%20X5%20xDrive40i" target="_blank" rel="noopener" class="inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Cotizar</a>
+                  </td>
+                </tr>
+
+                <tr class="transition hover:bg-white/5">
+                  <td class="px-5 py-4">
+                    <p class="font-medium text-white">Audi A4 45 TFSI</p>
+                    <p class="mt-0.5 text-xs text-zinc-500">Sedán · Nuevo ingreso</p>
+                  </td>
+                  <td class="px-5 py-4 text-zinc-300">2023</td>
+                  <td class="px-5 py-4 text-zinc-300">15,200 km</td>
+                  <td class="px-5 py-4 text-zinc-300">Automática</td>
+                  <td class="px-5 py-4 text-right font-semibold text-white">$689,000</td>
+                  <td class="px-5 py-4 text-right font-semibold text-amber-400">$18,546<span class="text-[11px] font-normal text-zinc-500">/mes</span></td>
+                  <td class="px-5 py-4 text-right">
+                    <a href="https://wa.me/5215512345678?text=Hola%2C%20me%20interesa%20el%20Audi%20A4%2045%20TFSI" target="_blank" rel="noopener" class="inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Cotizar</a>
+                  </td>
+                </tr>
+
+                <tr class="transition hover:bg-white/5">
+                  <td class="px-5 py-4">
+                    <p class="font-medium text-white">Ford Mustang GT</p>
+                    <p class="mt-0.5 text-xs text-zinc-500">Deportivo · Oferta</p>
+                  </td>
+                  <td class="px-5 py-4 text-zinc-300">2021</td>
+                  <td class="px-5 py-4 text-zinc-300">34,000 km</td>
+                  <td class="px-5 py-4 text-zinc-300">Manual</td>
+                  <td class="px-5 py-4 text-right font-semibold text-white">$1,150,000</td>
+                  <td class="px-5 py-4 text-right font-semibold text-amber-400">$30,954<span class="text-[11px] font-normal text-zinc-500">/mes</span></td>
+                  <td class="px-5 py-4 text-right">
+                    <a href="https://wa.me/5215512345678?text=Hola%2C%20me%20interesa%20el%20Ford%20Mustang%20GT" target="_blank" rel="noopener" class="inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Cotizar</a>
+                  </td>
+                </tr>
+
+                <tr class="transition hover:bg-white/5">
+                  <td class="px-5 py-4">
+                    <p class="font-medium text-white">Mercedes-Benz GLC 300</p>
+                    <p class="mt-0.5 text-xs text-zinc-500">SUV · Certificado</p>
+                  </td>
+                  <td class="px-5 py-4 text-zinc-300">2022</td>
+                  <td class="px-5 py-4 text-zinc-300">41,800 km</td>
+                  <td class="px-5 py-4 text-zinc-300">Automática</td>
+                  <td class="px-5 py-4 text-right font-semibold text-white">$1,049,000</td>
+                  <td class="px-5 py-4 text-right font-semibold text-amber-400">$28,236<span class="text-[11px] font-normal text-zinc-500">/mes</span></td>
+                  <td class="px-5 py-4 text-right">
+                    <a href="https://wa.me/5215512345678?text=Hola%2C%20me%20interesa%20la%20Mercedes-Benz%20GLC%20300" target="_blank" rel="noopener" class="inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Cotizar</a>
+                  </td>
+                </tr>
+
+                <tr class="transition hover:bg-white/5">
+                  <td class="px-5 py-4">
+                    <p class="font-medium text-white">Toyota Hilux TRD</p>
+                    <p class="mt-0.5 text-xs text-zinc-500">Pickup · Reservado</p>
+                  </td>
+                  <td class="px-5 py-4 text-zinc-300">2023</td>
+                  <td class="px-5 py-4 text-zinc-300">22,000 km</td>
+                  <td class="px-5 py-4 text-zinc-300">Automática</td>
+                  <td class="px-5 py-4 text-right font-semibold text-white">$745,000</td>
+                  <td class="px-5 py-4 text-right font-semibold text-amber-400">$20,053<span class="text-[11px] font-normal text-zinc-500">/mes</span></td>
+                  <td class="px-5 py-4 text-right">
+                    <a href="https://wa.me/5215512345678?text=Hola%2C%20me%20interesa%20la%20Toyota%20Hilux%20TRD" target="_blank" rel="noopener" class="inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Cotizar</a>
+                  </td>
+                </tr>
+
+                <tr class="transition hover:bg-white/5">
+                  <td class="px-5 py-4">
+                    <p class="font-medium text-white">Porsche 911 Carrera S</p>
+                    <p class="mt-0.5 text-xs text-zinc-500">Deportivo · Certificado</p>
+                  </td>
+                  <td class="px-5 py-4 text-zinc-300">2023</td>
+                  <td class="px-5 py-4 text-zinc-300">12,400 km</td>
+                  <td class="px-5 py-4 text-zinc-300">Automática</td>
+                  <td class="px-5 py-4 text-right font-semibold text-white">$1,850,000</td>
+                  <td class="px-5 py-4 text-right font-semibold text-amber-400">$49,796<span class="text-[11px] font-normal text-zinc-500">/mes</span></td>
+                  <td class="px-5 py-4 text-right">
+                    <a href="https://wa.me/5215512345678?text=Hola%2C%20me%20interesa%20el%20Porsche%20911%20Carrera%20S" target="_blank" rel="noopener" class="inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Cotizar</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="mt-4 text-[11px] leading-relaxed text-zinc-500">
+          * Mensualidad estimada con 20% de enganche, plazo de 36 meses y tasa fija del 12.9% anual. Sujeto a aprobación de crédito. No incluye seguro, placas ni tenencia. Precios sujetos a disponibilidad y cambio sin previo aviso.
+        </p>
+      </div>
+    </section>
+
+    <!-- PLANES DE FINANCIAMIENTO -->
+    <section id="financiamiento" class="scroll-mt-20 border-t border-white/5 bg-ink-900/40 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">Financiamiento</p>
+          <h2 class="mt-2 font-display text-3xl font-bold text-white sm:text-4xl">Elige el plan que mejor te acomode</h2>
+          <p class="mt-3 text-sm leading-relaxed text-zinc-400">Tres esquemas claros, con tasas fijas y sin cargos ocultos. Todos incluyen aprobación en 24 horas.</p>
+        </div>
+
+        <div class="mt-12 grid items-start gap-5 lg:grid-cols-3">
+
+          <!-- Plan Flex -->
+          <div class="rounded-2xl border border-white/10 bg-ink-950/60 p-6">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="font-display text-xl font-semibold text-white">Plan Flex</h3>
+                <p class="mt-1 text-sm text-zinc-400">La mensualidad más baja</p>
+              </div>
+              <span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-medium text-zinc-400">60 meses</span>
+            </div>
+
+            <p class="mt-6 font-display text-4xl font-bold text-white">$10,448<span class="text-sm font-medium text-zinc-500">/mes*</span></p>
+            <p class="mt-1 text-xs text-zinc-500">Ejemplo para unidad de $500,000</p>
+
+            <dl class="mt-6 space-y-2 border-t border-white/5 pt-5 text-sm">
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Enganche</dt><dd class="font-medium text-zinc-200">10%</dd></div>
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Plazo</dt><dd class="font-medium text-zinc-200">60 meses</dd></div>
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Tasa fija anual</dt><dd class="font-medium text-zinc-200">13.9%</dd></div>
+            </dl>
+
+            <ul class="mt-5 space-y-2 text-sm text-zinc-400">
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Enganche desde 10%</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Sin penalización por pago anticipado</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Aprobación en 24 horas</li>
+            </ul>
+
+            <a href="index.html#contacto" class="mt-7 inline-flex w-full items-center justify-center rounded-xl border border-white/10 px-5 py-3 text-sm font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Solicitar plan</a>
+          </div>
+
+          <!-- Plan Balanceado -->
+          <div class="relative rounded-2xl border border-amber-400/60 bg-gradient-to-b from-amber-400/10 to-ink-950/60 p-6 shadow-lg shadow-amber-400/5">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber-400 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-ink-950">Más popular</span>
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="font-display text-xl font-semibold text-white">Plan Balanceado</h3>
+                <p class="mt-1 text-sm text-zinc-400">El mejor equilibrio</p>
+              </div>
+              <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] font-medium text-zinc-300">48 meses</span>
+            </div>
+
+            <p class="mt-6 font-display text-4xl font-bold text-amber-400">$10,712<span class="text-sm font-medium text-zinc-500">/mes*</span></p>
+            <p class="mt-1 text-xs text-zinc-500">Ejemplo para unidad de $500,000</p>
+
+            <dl class="mt-6 space-y-2 border-t border-white/10 pt-5 text-sm">
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Enganche</dt><dd class="font-medium text-zinc-200">20%</dd></div>
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Plazo</dt><dd class="font-medium text-zinc-200">48 meses</dd></div>
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Tasa fija anual</dt><dd class="font-medium text-zinc-200">12.9%</dd></div>
+            </dl>
+
+            <ul class="mt-5 space-y-2 text-sm text-zinc-300">
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Todo lo del Plan Flex</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> 10% de descuento en seguro anual</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Mantenimiento anual incluido</li>
+            </ul>
+
+            <a href="index.html#contacto" class="mt-7 inline-flex w-full items-center justify-center rounded-xl bg-amber-400 px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-amber-300">Solicitar plan</a>
+          </div>
+
+          <!-- Plan Confort -->
+          <div class="rounded-2xl border border-white/10 bg-ink-950/60 p-6">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="font-display text-xl font-semibold text-white">Plan Confort</h3>
+                <p class="mt-1 text-sm text-zinc-400">La tasa más baja</p>
+              </div>
+              <span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-medium text-zinc-400">36 meses</span>
+            </div>
+
+            <p class="mt-6 font-display text-4xl font-bold text-white">$11,608<span class="text-sm font-medium text-zinc-500">/mes*</span></p>
+            <p class="mt-1 text-xs text-zinc-500">Ejemplo para unidad de $500,000</p>
+
+            <dl class="mt-6 space-y-2 border-t border-white/5 pt-5 text-sm">
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Enganche</dt><dd class="font-medium text-zinc-200">30%</dd></div>
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Plazo</dt><dd class="font-medium text-zinc-200">36 meses</dd></div>
+              <div class="flex justify-between gap-4"><dt class="text-zinc-400">Tasa fija anual</dt><dd class="font-medium text-zinc-200">11.9%</dd></div>
+            </dl>
+
+            <ul class="mt-5 space-y-2 text-sm text-zinc-400">
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Garantía extendida a 24 meses</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Entrega prioritaria en 24 horas</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Sin comisión por apertura</li>
+            </ul>
+
+            <a href="index.html#contacto" class="mt-7 inline-flex w-full items-center justify-center rounded-xl border border-white/10 px-5 py-3 text-sm font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Solicitar plan</a>
+          </div>
+        </div>
+
+        <div class="mt-8 rounded-2xl border border-white/5 bg-ink-950/60 p-5">
+          <p class="text-xs leading-relaxed text-zinc-500">
+            * Mensualidades calculadas sobre una unidad de $500,000, con el enganche y plazo indicados y tasa fija anual. El monto final depende del vehículo, perfil del cliente y aprobación de la financiera. CAT promedio 14.2% sin IVA. Requisitos: INE, comprobante de domicilio, comprobante de ingresos y 6 meses de estados de cuenta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAQUETES DE SERVICIO -->
+    <section id="servicios" class="scroll-mt-20 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">Servicios</p>
+          <h2 class="mt-2 font-display text-3xl font-bold text-white sm:text-4xl">Paquetes de mantenimiento</h2>
+          <p class="mt-3 text-sm leading-relaxed text-zinc-400">Precios cerrados y refacciones originales. Elige el nivel de cuidado que necesita tu auto.</p>
+        </div>
+
+        <div class="mt-12 grid items-start gap-5 lg:grid-cols-3">
+
+          <!-- Esencial -->
+          <div class="rounded-2xl border border-white/10 bg-ink-900 p-6">
+            <h3 class="font-display text-xl font-semibold text-white">Esencial</h3>
+            <p class="mt-1 text-sm text-zinc-400">Cada 10,000 km o 6 meses</p>
+            <p class="mt-6 font-display text-4xl font-bold text-white">$1,990</p>
+            <p class="mt-1 text-xs text-zinc-500">MXN · IVA incluido</p>
+            <ul class="mt-6 space-y-2.5 border-t border-white/5 pt-5 text-sm text-zinc-400">
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Cambio de aceite sintético (hasta 5 L)</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Filtro de aceite nuevo</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Revisión de 30 puntos de seguridad</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Lavado exterior</li>
+            </ul>
+            <a href="index.html#contacto" class="mt-7 inline-flex w-full items-center justify-center rounded-xl border border-white/10 px-5 py-3 text-sm font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Agendar servicio</a>
+          </div>
+
+          <!-- Completo -->
+          <div class="relative rounded-2xl border border-amber-400/60 bg-gradient-to-b from-amber-400/10 to-ink-900 p-6">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber-400 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-ink-950">Recomendado</span>
+            <h3 class="font-display text-xl font-semibold text-white">Completo</h3>
+            <p class="mt-1 text-sm text-zinc-400">Cada 20,000 km o 12 meses</p>
+            <p class="mt-6 font-display text-4xl font-bold text-amber-400">$3,490</p>
+            <p class="mt-1 text-xs text-zinc-500">MXN · IVA incluido</p>
+            <ul class="mt-6 space-y-2.5 border-t border-white/10 pt-5 text-sm text-zinc-300">
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Todo lo del paquete Esencial</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Filtros de aire y de cabina</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Alineación y balanceo</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Revisión de frenos y niveles</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Diagnóstico computarizado</li>
+            </ul>
+            <a href="index.html#contacto" class="mt-7 inline-flex w-full items-center justify-center rounded-xl bg-amber-400 px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-amber-300">Agendar servicio</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="rounded-2xl border border-white/10 bg-ink-900 p-6">
+            <h3 class="font-display text-xl font-semibold text-white">Premium</h3>
+            <p class="mt-1 text-sm text-zinc-400">Cada 40,000 km o 24 meses</p>
+            <p class="mt-6 font-display text-4xl font-bold text-white">$5,990</p>
+            <p class="mt-1 text-xs text-zinc-500">MXN · IVA incluido</p>
+            <ul class="mt-6 space-y-2.5 border-t border-white/5 pt-5 text-sm text-zinc-400">
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Todo lo del paquete Completo</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Cambio de líquido de frenos</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Afinación mayor</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Servicio de aire acondicionado</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Detallado interior y exterior</li>
+              <li class="flex gap-2"><span class="text-amber-400">✓</span> Garantía de 6 meses en mano de obra</li>
+            </ul>
+            <a href="index.html#contacto" class="mt-7 inline-flex w-full items-center justify-center rounded-xl border border-white/10 px-5 py-3 text-sm font-semibold text-zinc-200 transition hover:border-amber-400 hover:text-amber-400">Agendar servicio</a>
+          </div>
+        </div>
+
+        <div class="mt-12 grid gap-5 lg:grid-cols-2">
+
+          <div class="rounded-2xl border border-white/5 bg-ink-900 p-6">
+            <h3 class="font-display text-lg font-semibold text-white">Servicios adicionales</h3>
+            <ul class="mt-4 divide-y divide-white/5 text-sm">
+              <li class="flex items-center justify-between gap-4 py-3">
+                <span class="text-zinc-400">Gestión de placas y tenencia</span>
+                <span class="shrink-0 font-semibold text-white">$3,500</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 py-3">
+                <span class="text-zinc-400">Seguro anual (cobertura amplia)</span>
+                <span class="shrink-0 font-semibold text-white">Desde $6,800</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 py-3">
+                <span class="text-zinc-400">Valuación de tu auto a cuenta</span>
+                <span class="shrink-0 font-semibold text-emerald-400">Gratis</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 py-3">
+                <span class="text-zinc-400">Entrega a domicilio (CDMX y Edomex)</span>
+                <span class="shrink-0 font-semibold text-emerald-400">Sin costo</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 py-3">
+                <span class="text-zinc-400">Instalación de accesorios</span>
+                <span class="shrink-0 font-semibold text-white">Desde $1,200</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 py-3">
+                <span class="text-zinc-400">Blindaje nivel III</span>
+                <span class="shrink-0 font-semibold text-white">Desde $180,000</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border border-amber-400/20 bg-amber-400/5 p-6">
+            <h3 class="font-display text-lg font-semibold text-amber-300">Notas importantes</h3>
+            <ul class="mt-4 space-y-3 text-sm leading-relaxed text-zinc-400">
+              <li class="flex gap-2"><span class="text-amber-400">•</span> Todos los precios están en MXN e incluyen IVA.</li>
+              <li class="flex gap-2"><span class="text-amber-400">•</span> Los paquetes aplican para autos de hasta 2.0 L. Unidades premium requieren cotización personalizada.</li>
+              <li class="flex gap-2"><span class="text-amber-400">•</span> Usamos refacciones originales y mano de obra certificada.</li>
+              <li class="flex gap-2"><span class="text-amber-400">•</span> Agenda tu cita con al menos 24 horas de anticipación.</li>
+              <li class="flex gap-2"><span class="text-amber-400">•</span> Precios con vigencia a noviembre de 2026. Sujetos a cambio sin previo aviso.</li>
+            </ul>
+            <a href="https://wa.me/5215512345678?text=Hola%2C%20quiero%20agendar%20un%20servicio" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-amber-400 transition hover:text-amber-300">
+              Agendar por WhatsApp
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="pb-20 sm:pb-24">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="flex flex-col items-center justify-between gap-6 rounded-3xl border border-amber-400/20 bg-gradient-to-r from-amber-400/10 to-transparent p-8 sm:flex-row sm:p-10">
+          <div>
+            <h2 class="font-display text-2xl font-bold text-white">¿Necesitas una cotización personalizada?</h2>
+            <p class="mt-1 text-sm text-zinc-400">Ajustamos el precio, el enganche y el plazo a lo que necesitas.</p>
+          </div>
+          <a href="https://wa.me/5215512345678?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20personalizada" target="_blank" rel="noopener" class="inline-flex shrink-0 items-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-ink-950 transition hover:bg-amber-300">
+            Cotizar por WhatsApp
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 text-xs text-zinc-500 sm:flex-row">
+      <p>© <span id="year">2026</span> AutoElite. Todos los derechos reservados.</p>
+      <div class="flex gap-6">
+        <a href="index.html" class="transition hover:text-amber-400">Inicio</a>
+        <a href="servicios.html" class="transition hover:text-amber-400">Servicios</a>
+        <a href="index.html#contacto" class="transition hover:text-amber-400">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
