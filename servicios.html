@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios | AutoElite</title>
+  <meta name="description" content="Venta de autos, financiamiento, prueba de manejo, trámites, seguro, entrega a domicilio y servicio postventa." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: { 950: '#09090b', 900: '#131316' } },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Outfit', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-ink-950 font-sans text-zinc-100 antialiased selection:bg-amber-400 selection:text-ink-950">
+
+  <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink-950/80 backdrop-blur-lg">
+    <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-6" aria-label="Principal">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-amber-400 text-ink-950">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+        </span>
+        <span class="font-display text-xl font-bold tracking-tight text-white">Auto<span class="text-amber-400">Elite</span></span>
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm font-medium text-zinc-300 md:flex">
+        <a href="index.html" class="transition hover:text-amber-400">Inicio</a>
+        <a href="index.html#vehiculos" class="transition hover:text-amber-400">Vehículos</a>
+        <a href="servicios.html" class="text-amber-400" aria-current="page">Servicios</a>
+        <a href="index.html#contacto" class="transition hover:text-amber-400">Contacto</a>
+      </div>
+
+      <a href="index.html#contacto" class="rounded-full bg-amber-400 px-5 py-2.5 text-sm font-semibold text-ink-950 transition hover:bg-amber-300">Cotizar ahora</a>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+
+    <!-- ENCABEZADO -->
+    <section class="relative overflow-hidden border-b border-white/5 py-20 sm:py-24">
+      <div class="absolute -top-24 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-amber-400/10 blur-3xl"></div>
+      <div class="relative mx-auto max-w-4xl px-6 text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">Nuestros servicios</p>
+        <h1 class="mt-3 font-display text-4xl font-bold leading-tight text-white sm:text-5xl">
+          Todo para tu auto,<br /><span class="bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent">en un solo lugar.</span>
+        </h1>
+        <p class="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-zinc-400 sm:text-base">
+          Desde la elección del vehículo hasta su mantenimiento. Nos encargamos de cada detalle para que solo disfrutes el camino.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
+          <!-- 1 -->
+          <article class="rounded-2xl border border-white/5 bg-ink-900 p-6 transition hover:border-amber-400/40">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+            </span>
+            <h2 class="mt-4 font-display text-base font-semibold text-white">Venta de autos</h2>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-400">Nuevos y seminuevos certificados, con inspección de 150 puntos e historial verificado.</p>
+          </article>
+
+          <!-- 2 -->
+          <article class="rounded-2xl border border-white/5 bg-ink-900 p-6 transition hover:border-amber-400/40">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </span>
+            <h2 class="mt-4 font-display text-base font-semibold text-white">Financiamiento</h2>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-400">Planes desde 10% de enganche y hasta 60 meses. Aprobación en 24 horas.</p>
+          </article>
+
+          <!-- 3 -->
+          <article class="rounded-2xl border border-white/5 bg-ink-900 p-6 transition hover:border-amber-400/40">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+            </span>
+            <h2 class="mt-4 font-display text-base font-semibold text-white">Prueba de manejo</h2>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-400">Agenda sin costo y maneja el vehículo que te interesa antes de decidir.</p>
+          </article>
+
+          <!-- 4 -->
+          <article class="rounded-2xl border border-white/5 bg-ink-900 p-6 transition hover:border-amber-400/40">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>
+            </span>
+            <h2 class="mt-4 font-display text-base font-semibold text-white">Toma tu auto a cuenta</h2>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-400">Recibimos tu vehículo actual como parte del pago, con valuación el mismo día.</p>
+          </article>
+
+          <!-- 5 -->
+          <article class="rounded-2xl border border-white/5 bg-ink-900 p-6 transition hover:border-amber-400/40">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
+            </span>
+            <h2 class="mt-4 font-display text-base font-semibold text-white">Trámites y placas</h2>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-400">Factura, alta, placas y tenencia gestionados por nosotros. Tú solo firmas.</p>
+          </article>
+
+          <!-- 6 -->
+          <article class="rounded-2xl border border-white/5 bg-ink-900 p-6 transition hover:border-amber-400/40">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
+            </span>
+            <h2 class="mt-4 font-display text-base font-semibold text-white">Seguro y garantía</h2>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-400">Coberturas a tu medida y garantía de 12 meses en motor y transmisión.</p>
+          </article>
+
+          <!-- 7 -->
+          <article class="rounded-2xl border border-white/5 bg-ink-900 p-6 transition hover:border-amber-400/40">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+            </span>
+            <h2 class="mt-4 font-display text-base font-semibold text-white">Entrega a domicilio</h2>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-400">Llevamos tu auto hasta tu casa, sin costo en CDMX y zona metropolitana.</p>
+          </article>
+
+          <!-- 8 -->
+          <article class="rounded-2xl border border-white/5 bg-ink-900 p-6 transition hover:border-amber-400/40">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" /></svg>
+            </span>
+            <h2 class="mt-4 font-display text-base font-semibold text-white">Servicio postventa</h2>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-400">Mantenimiento preventivo y correctivo con refacciones originales.</p>
+          </article>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-14 flex flex-col items-center justify-between gap-6 rounded-3xl border border-amber-400/20 bg-gradient-to-r from-amber-400/10 to-transparent p-8 sm:flex-row sm:p-10">
+          <div>
+            <h2 class="font-display text-2xl font-bold text-white">¿No encuentras lo que buscas?</h2>
+            <p class="mt-1 text-sm text-zinc-400">Cuéntanos qué necesitas y armamos un plan a tu medida.</p>
+          </div>
+          <a href="https://wa.me/5215512345678?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="inline-flex shrink-0 items-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-ink-950 transition hover:bg-amber-300">
+            Hablar con un asesor
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 text-xs text-zinc-500 sm:flex-row">
+      <p>© <span id="year">2026</span> AutoElite. Todos los derechos reservados.</p>
+      <div class="flex gap-6">
+        <a href="index.html" class="transition hover:text-amber-400">Inicio</a>
+        <a href="index.html#vehiculos" class="transition hover:text-amber-400">Vehículos</a>
+        <a href="index.html#contacto" class="transition hover:text-amber-400">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
